@@ -1,0 +1,158 @@
+{
+  "model": "XGBRegressor",
+  "xgb_version": "3.2.0",
+  "split": {
+    "train": 345,
+    "val": 39,
+    "test": 96
+  },
+  "features": [
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "temperature",
+    "wind",
+    "active_nodes",
+    "mean_node_load",
+    "max_node_load",
+    "mean_edge_load",
+    "max_edge_load",
+    "dis_flood",
+    "dis_fire",
+    "dis_earthquake",
+    "disaster_zone",
+    "disaster_severity",
+    "zone_hazard",
+    "blocked_ratio",
+    "shelter_util",
+    "avg_response_time",
+    "traffic_lag_1",
+    "traffic_lag_2",
+    "traffic_lag_3",
+    "traffic_lag_24",
+    "aqi_lag_1",
+    "aqi_lag_2",
+    "aqi_lag_3",
+    "aqi_lag_24",
+    "evac_rate_lag_1",
+    "evac_rate_lag_2",
+    "evac_rate_lag_3",
+    "evac_rate_lag_24"
+  ],
+  "overall": {
+    "traffic": {
+      "mae": 4.4626,
+      "rmse": 9.4092
+    },
+    "aqi": {
+      "mae": 4.3855,
+      "rmse": 10.2396
+    },
+    "evac_rate": {
+      "mae": 0.0289,
+      "rmse": 0.029
+    },
+    "avg_response_time": {
+      "mae": 0.0065,
+      "rmse": 0.0065
+    }
+  },
+  "per_disaster": {
+    "traffic": {
+      "none": {
+        "n": 96,
+        "mae": 4.4626,
+        "rmse": 9.4092
+      },
+      "flood": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      },
+      "fire": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      },
+      "earthquake": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      }
+    },
+    "aqi": {
+      "none": {
+        "n": 96,
+        "mae": 4.3855,
+        "rmse": 10.2396
+      },
+      "flood": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      },
+      "fire": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      },
+      "earthquake": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      }
+    },
+    "evac_rate": {
+      "none": {
+        "n": 96,
+        "mae": 0.0289,
+        "rmse": 0.029
+      },
+      "flood": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      },
+      "fire": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      },
+      "earthquake": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      }
+    },
+    "avg_response_time": {
+      "none": {
+        "n": 96,
+        "mae": 0.0065,
+        "rmse": 0.0065
+      },
+      "flood": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      },
+      "fire": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      },
+      "earthquake": {
+        "n": 0,
+        "mae": null,
+        "rmse": null
+      }
+    }
+  },
+  "lstm_evac_rate": {
+    "seq_len": 24,
+    "horizon": 6,
+    "epochs": 60,
+    "best_val_loss": 0.002218,
+    "test_mae": 0.0156,
+    "test_rmse": 0.0177
+  }
+}

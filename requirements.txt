@@ -1,0 +1,40 @@
+# Core data + plotting
+numpy
+pandas
+matplotlib
+
+# Graph/map
+networkx
+osmnx
+geopandas
+shapely
+pyproj
+
+# ML
+scikit-learn
+torch
+joblib
+xgboost
+
+# API backend
+fastapi
+uvicorn
+pydantic
+python-multipart
+httpx
+
+# NLP
+transformers
+tokenizers
+sentencepiece
+accelerate
+
+# Config/util
+python-dotenv
+PyYAML
+tqdm
+
+# UI
+streamlit
+
+ipykernel

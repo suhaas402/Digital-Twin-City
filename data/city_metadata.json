@@ -1,0 +1,78 @@
+{
+  "place": "Piedmont, California, USA",
+  "num_zones": 6,
+  "num_nodes": 352,
+  "num_edges": 944,
+  "bbox": {
+    "lat_min": 37.812289,
+    "lat_max": 37.831726,
+    "lon_min": -122.249336,
+    "lon_max": -122.212491
+  },
+  "zone_node_counts": {
+    "3": 72,
+    "1": 55,
+    "4": 98,
+    "0": 34,
+    "2": 74,
+    "5": 19
+  },
+  "population": {
+    "0": 867,
+    "1": 1797,
+    "2": 2172,
+    "3": 1951,
+    "4": 2655,
+    "5": 359
+  },
+  "infrastructure": {
+    "hospital": [
+      {
+        "name": "fallback_hospital_zone_4",
+        "lat": 37.824662,
+        "lon": -122.230516,
+        "node": 53033660,
+        "zone": 4
+      },
+      {
+        "name": "fallback_hospital_zone_2",
+        "lat": 37.815258,
+        "lon": -122.222875,
+        "node": 53092201,
+        "zone": 2
+      }
+    ],
+    "fire_station": [
+      {
+        "name": "Piedmont Fire Department",
+        "lat": 37.824228,
+        "lon": -122.232614,
+        "node": 53025060,
+        "zone": 4
+      }
+    ],
+    "shelter": [
+      {
+        "name": "shelter_0",
+        "lat": 37.824489,
+        "lon": -122.230737,
+        "node": 53073691,
+        "zone": 4
+      },
+      {
+        "name": "shelter_1",
+        "lat": 37.825058,
+        "lon": -122.231975,
+        "node": 53073689,
+        "zone": 4
+      },
+      {
+        "name": "shelter_2",
+        "lat": 37.822679,
+        "lon": -122.229359,
+        "node": 53085377,
+        "zone": 4
+      }
+    ]
+  }
+}
